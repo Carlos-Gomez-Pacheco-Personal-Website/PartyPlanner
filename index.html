@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Party Planner</title>
-    <script src="index.js"></script>
   </head>
   <body>
     <div id="create-party">
+      <!-- name, time, location, description -->
       <form action="submit">
         <label>Party Name</label>
         <input type="text" name="title" />
         <label>Time</label>
-        <input type="text" name="time" />
+        <input type="datetime-local" name="date" />
         <label>Location</label>
         <input type="text" name="location" />
         <label>Description</label>
@@ -20,6 +20,8 @@
         <button type="submit" name="add-button">Add</button>
       </form>
     </div>
-    <div id="display-parties"></div>
+
+    <ul id="display-parties"></ul>
+    <script src="index.js"></script>
   </body>
 </html>
